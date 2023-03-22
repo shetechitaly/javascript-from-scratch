@@ -85,7 +85,7 @@ const config = {
             title: 'Docs',
             items: [
               {
-                label: 'Tutorial',
+                label: 'Bootcamp',
                 to: '/docs/intro',
               },
             ],
