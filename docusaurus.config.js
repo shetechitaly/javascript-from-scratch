@@ -6,7 +6,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'Javscript from scratch',
+  title: 'Javascript from scratch',
   tagline: 'SheTech Bootcamp',
   favicon: 'img/favicon.ico',
 
