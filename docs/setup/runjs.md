@@ -4,52 +4,38 @@ sidebar_position: 2
 
 # RunJS
 
-Docusaurus can manage multiple versions of your docs.
+RunJS è uno strumento potente e flessibile per gli sviluppatori JavaScript, che consente loro di scrivere, eseguire e testare il codice JavaScript in un ambiente di sviluppo completo e isolato.
 
-## Create a docs version
+## Per Windows
 
-Release a version 1.0 of your project:
+**Step 1:** Vai al sito web ufficiale di RunJS all'indirizzo https://runjs.dev/.
 
-```bash
-npm run docusaurus docs:version 1.0
-```
+![runJsWindows](./img/runjs-screen-win.png)
 
-The `docs` folder is copied into `versioned_docs/version-1.0` and `versions.json` is created.
+**Step 2:** Raggiungi il footer del sito e clicca il bottone "Try RunJS for Free" per scaricare l'installer di RunJS per Windows.
 
-Your docs now have 2 versions:
+![runJsWinFooter](./img/tryrunjs-win.png)
 
-- `1.0` at `http://localhost:3000/docs/` for the version 1.0 docs
-- `current` at `http://localhost:3000/docs/next/` for the **upcoming, unreleased docs**
+**Step 3:** Apri l'installer appena scaricato e segui le istruzioni per completare l'installazione.
 
-## Add a Version Dropdown
+**Step 4:** Dopo aver completato l'installazione, apri RunJS dal menu Start o cercando "RunJS" nella barra di ricerca di Windows.
 
-To navigate seamlessly across versions, add a version dropdown.
+## Per Mac
 
-Modify the `docusaurus.config.js` file:
+**Step 1:** Vai al sito web ufficiale di RunJS all'indirizzo https://runjs.dev/.
 
-```js title="docusaurus.config.js"
-module.exports = {
-  themeConfig: {
-    navbar: {
-      items: [
-        // highlight-start
-        {
-          type: 'docsVersionDropdown',
-        },
-        // highlight-end
-      ],
-    },
-  },
-};
-```
+![runJsWindows](./img/runjs-screen-win.png)
 
-The docs version dropdown appears in your navbar:
+**Step 2:** Raggiungi il footer del sito e clicca il bottone "Try RunJS for Free" per scaricare il pacchetto di RunJS per Mac.
 
-![Docs Version Dropdown](./img/docsVersionDropdown.png)
+![runJsMacFooter](./img/tryrunjs-mac.png)
 
-## Update an existing version
+**Step 3:** Apri il pacchetto appena scaricato e trascina l'icona di RunJS nella cartella "Applicazioni" per completare l'installazione.
 
-It is possible to edit versioned docs in their respective folder:
+**Step 4:** Dopo aver completato l'installazione, apri RunJS dalla cartella "Applicazioni" o dalla barra delle applicazioni di macOS.
 
-- `versioned_docs/version-1.0/hello.md` updates `http://localhost:3000/docs/hello`
-- `docs/hello.md` updates `http://localhost:3000/docs/next/hello`
+**Ben fatto! 🎉**
+
+Ora puoi iniziare ad utilizzare RunJS.
+
+![VS Code](./img/runjs-installed.png)

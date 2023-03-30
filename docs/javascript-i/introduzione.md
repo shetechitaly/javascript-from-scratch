@@ -4,31 +4,32 @@ sidebar_position: 1
 
 # Introduzione pratica a JavaScript
 
-Docusaurus creates a **page for each blog post**, but also a **blog index page**, a **tag system**, an **RSS** feed...
+JavaScript è un linguaggio di programmazione dinamico utilizzato principalmente per la creazione di applicazioni web interattive. 
 
-## Create your first Post
+È stato creato da [Brendan Eich](https://it.wikipedia.org/wiki/Brendan_Eich) nel 1995 e viene utilizzato da milioni di sviluppatori in tutto il mondo.
 
-Create a file at `blog/2021-02-28-greetings.md`:
+JavaScript è importante per la creazione di applicazioni web poiché consente di creare interazioni dinamiche con l'utente. Ad esempio, puoi utilizzare JavaScript per creare pulsanti che cambiano colore quando l'utente passa il mouse sopra di essi o per creare formulari che validano automaticamente le informazioni inserite dall'utente.
 
-```md title="blog/2021-02-28-greetings.md"
----
-slug: greetings
-title: Greetings!
-authors:
-  - name: Joel Marcey
-    title: Co-creator of Docusaurus 1
-    url: https://github.com/JoelMarcey
-    image_url: https://github.com/JoelMarcey.png
-  - name: Sébastien Lorber
-    title: Docusaurus maintainer
-    url: https://sebastienlorber.com
-    image_url: https://github.com/slorber.png
-tags: [greetings]
----
+Per iniziare a programmare in JavaScript, hai bisogno di un ambiente di sviluppo. Ci sono molti editor di testo disponibili, ma ti consigliamo di utilizzare [Visual Studio Code](https://code.visualstudio.com/), che è gratuito e molto potente.
 
-Congratulations, you have made your first post!
+Per eseguire il codice JavaScript, utilizzeremo [RunJS](https://runjs.app/), un'interfaccia utente grafica che ti consente di inserire ed eseguire codice JavaScript in un ambiente isolato. RunJS ti consente di testare il tuo codice in tempo reale e di vedere i risultati immediatamente.
 
-Feel free to play around and edit this post as much you like.
+Ecco un esempio di codice JavaScript che puoi inserire in RunJS per testare il tuo ambiente di sviluppo:
+
+```jsx
+// questo è un commento, viene ignorato dal programma
+// Qui sotto utilizziamo la funzione console.log per stampare il messaggio "Ciao, mondo!" nella console
+console.log("Ciao, mondo!"); 
 ```
 
-A new blog post is now available at [http://localhost:3000/blog/greetings](http://localhost:3000/blog/greetings).
+Per eseguire il codice sopra in RunJS, segui questi passaggi:
+
+1. Apri RunJS
+2. Inserisci il codice sopra nella finestra di sinistra (chiamata "Editor").
+3. Nella finestra di destra (chiamata "Console"), vedrai il messaggio "Ciao, mondo!" stampato.
+
+![helloWorld](./img/exercise-0.png)
+
+**Congratulazioni! 🎉** 
+
+Hai appena eseguito il tuo primo codice JavaScript utilizzando RunJS. 

@@ -4,52 +4,34 @@ sidebar_position: 1
 
 # Visual studio code
 
-Docusaurus can manage multiple versions of your docs.
+VSCode è un editor di codice sorgente sviluppato da Microsoft che supporta una vasta gamma di linguaggi di programmazione.
 
-## Create a docs version
+## Per Windows
 
-Release a version 1.0 of your project:
+**Step 1:** Vai al sito web ufficiale di Visual Studio Code all'indirizzo https://code.visualstudio.com/.
 
-```bash
-npm run docusaurus docs:version 1.0
-```
+![vsCodeWindows](./img/screen-windows.png)
 
-The `docs` folder is copied into `versioned_docs/version-1.0` and `versions.json` is created.
+**Step 2:** Clicca sul pulsante "Download for Windows" per scaricare l'installer di Visual Studio Code per Windows.
 
-Your docs now have 2 versions:
+**Step 3:** Apri l'installer appena scaricato e segui le istruzioni per completare l'installazione.
 
-- `1.0` at `http://localhost:3000/docs/` for the version 1.0 docs
-- `current` at `http://localhost:3000/docs/next/` for the **upcoming, unreleased docs**
+**Step 4:** Dopo aver completato l'installazione, apri Visual Studio Code dal menu Start o cercando "Visual Studio Code" nella barra di ricerca di Windows.
 
-## Add a Version Dropdown
+## Per Mac
 
-To navigate seamlessly across versions, add a version dropdown.
+**Step 1:** Vai al sito web ufficiale di Visual Studio Code all'indirizzo https://code.visualstudio.com/.
 
-Modify the `docusaurus.config.js` file:
+![vsMac](./img/screen-mac.png)
 
-```js title="docusaurus.config.js"
-module.exports = {
-  themeConfig: {
-    navbar: {
-      items: [
-        // highlight-start
-        {
-          type: 'docsVersionDropdown',
-        },
-        // highlight-end
-      ],
-    },
-  },
-};
-```
+**Step 2:** Clicca sul pulsante "Download Mac Universal" per scaricare l'installer di Visual Studio Code per Mac.
 
-The docs version dropdown appears in your navbar:
+**Step 3:** Apri il pacchetto appena scaricato e trascina l'icona di Visual Studio Code nella cartella "Applicazioni" per completare l'installazione.
 
-![Docs Version Dropdown](./img/docsVersionDropdown.png)
+**Step 4:** Dopo aver completato l'installazione, apri Visual Studio Code dalla cartella "Applicazioni" o dalla barra delle applicazioni di macOS.
 
-## Update an existing version
+**Ben fatto! 🎉**
 
-It is possible to edit versioned docs in their respective folder:
+Ora puoi iniziare ad utilizzare Visual Studio Code.
 
-- `versioned_docs/version-1.0/hello.md` updates `http://localhost:3000/docs/hello`
-- `docs/hello.md` updates `http://localhost:3000/docs/next/hello`
+![VS Code](./img/vscode-installed.png)
