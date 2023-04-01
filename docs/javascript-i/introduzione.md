@@ -4,6 +4,8 @@ sidebar_position: 1
 
 # Introduzione pratica a JavaScript
 
+Argomenti: Storia di JavaScript, Hello World!
+
 ## Intro
 
 JavaScript è un linguaggio di programmazione dinamico utilizzato principalmente per la creazione di applicazioni web interattive. 
@@ -15,11 +17,6 @@ JavaScript è importante per la creazione di applicazioni web poiché consente d
 Per iniziare a programmare in JavaScript, hai bisogno di un ambiente di sviluppo. Ci sono molti editor di testo disponibili, ma ti consigliamo di utilizzare [Visual Studio Code](https://code.visualstudio.com/), che è gratuito e molto potente.
 
 Per eseguire il codice JavaScript, utilizzeremo [RunJS](https://runjs.app/), un'interfaccia utente grafica che ti consente di inserire ed eseguire codice JavaScript in un ambiente isolato. RunJS ti consente di testare il tuo codice in tempo reale e di vedere i risultati immediatamente.
-
-## Come eseguire codice Javascript
-
-Lorem ipsum
-
 
 
 ## Esercizio

@@ -1,0 +1,99 @@
+---
+sidebar_position: 2
+---
+
+# Oggetti
+
+## Intro
+
+In JavaScript, gli oggetti sono una delle strutture dati fondamentali, che ci consentono di organizzare e manipolare dati complessi. **Gli oggetti sono essenzialmente raccolte di proprietà, dove ogni proprietà è composta da una chiave (o nome) e un valore.**
+
+> [Scopri di più](https://www.w3schools.com/js/js_objects.asp)
+
+## Creazione
+
+Per creare un oggetto in JavaScript, possiamo utilizzare la sintassi degli oggetti letterali, che ci consente di definire un oggetto con una serie di proprietà e valori:
+
+```jsx
+let persona = {
+  nome: 'Mario',
+  cognome: 'Rossi',
+  eta: 30,
+  professione: 'Ingegnere'
+};
+```
+
+## Manipolazione
+
+Possiamo accedere alle proprietà dell'oggetto utilizzando la notazione punto o la notazione delle parentesi quadre:
+
+```jsx
+
+console.log(persona.nome); // 'Mario'
+console.log(persona['cognome']); // 'Rossi'
+```
+
+Possiamo anche aggiungere o modificare le proprietà dell'oggetto in qualsiasi momento:
+
+```jsx
+
+persona.professione = 'Architetto';
+persona['eta'] = 35;
+
+```
+
+JavaScript ha anche una serie di oggetti predefiniti che possiamo utilizzare. Ad esempio, l'oggetto String ci consente di lavorare con le stringhe:
+
+```jsx
+
+let nome = 'Mario';
+console.log(nome.length); // 5
+console.log(nome.toUpperCase()); // 'MARIO'
+console.log(nome.charAt(0)); // 'M'
+```
+
+L'oggetto Array è utilizzato per lavorare con gli array:
+
+```jsx
+
+let numeri = [1, 2, 3, 4, 5];
+console.log(numeri.length); // 5
+console.log(numeri[2]); // 3
+numeri.push(6);
+console.log(numeri.length); // 6
+
+```
+
+Infine, l'oggetto Math è utilizzato per eseguire operazioni matematiche:
+
+```jsx
+
+console.log(Math.PI); // 3.141592653589793
+console.log(Math.sqrt(4)); // 2
+console.log(Math.random()); // un numero casuale compreso tra 0 e 1
+```
+
+> [Scopri di più](https://www.w3schools.com/js/js_math.asp)
+
+## Esercizio
+
+### Oggetti
+
+Dato l'oggetto "persona" definito in precedenza:
+
+```jsx
+let persona = {
+  nome: 'Mario',
+  cognome: 'Rossi',
+  eta: 30,
+  professione: 'Ingegnere'
+};
+```
+
+stampare a video il nome e la professione della persona utilizzando 
+la notazione punto e la notazione delle parentesi quadre. 
+Successivamente, modificare l'età della persona e stampare nuovamente tutte le proprietà dell'oggetto.
+
+**Congratulazioni! 🎉** 
+
+E' arrivato il momento di mettere le mani in pasta con il Progetto Finale!

@@ -1,0 +1,187 @@
+---
+sidebar_position: 2
+---
+
+# Elementi di base di JavaScript
+
+Argomenti: DOM, Variabili e Operatori
+
+## Intro
+JavaScript è un linguaggio a tipizzazione dinamica, il che significa che non è necessario specificare il tipo di dato quando si dichiara una variabile. Ciò lo rende molto flessibile e facile da usare per i programmatori.
+
+## DOM
+
+Il **Document Object Model**, o DOM, è un insieme di oggetti creati dal browser web quando viene caricata una pagina HTML. Il DOM rappresenta la struttura della pagina HTML come un albero gerarchico di oggetti, che possono essere manipolati tramite l'utilizzo del codice JavaScript.
+
+![DOM](./img/pic_htmltree.gif)
+
+Utilizzando il DOM, gli sviluppatori possono manipolare il contenuto della pagina HTML, modificarne lo stile, aggiungere o rimuovere elementi, e altro ancora. Il DOM è una parte fondamentale dello sviluppo web con JavaScript, ed è necessario comprenderlo bene per poter creare applicazioni web interattive.
+
+> [Scopri di più](https://www.w3schools.com/js/js_htmldom.asp)
+
+### document.getElementById()
+
+**document.getElementById()** è un metodo JavaScript utilizzato per recuperare un elemento del DOM con un determinato ID.
+
+Il metodo prende un parametro, ovvero l'ID dell'elemento da cercare, e restituisce l'elemento corrispondente. Ad esempio, supponiamo che tu abbia un elemento div con l'ID "mioDiv" nella tua pagina HTML. Puoi utilizzare il metodo document.getElementById() per recuperare l'elemento e poi utilizzarlo per modificarne il contenuto o le proprietà, come ad esempio lo stile CSS.
+
+Ecco un esempio:
+
+```html
+<div id="mioDiv">Questo è il mio div</div>
+```
+
+```javascript
+// Recupera l'elemento con l'ID "mioDiv"
+const mioElemento = document.getElementById("mioDiv");
+
+// Modifica il contenuto dell'elemento
+mioElemento.innerHTML = "Questo è il mio nuovo contenuto!";
+
+// Modifica lo stile dell'elemento
+mioElemento.style.backgroundColor = "red";
+mioElemento.style.color = "white";
+
+```
+
+In questo esempio, abbiamo utilizzato document.getElementById() per recuperare l'elemento div con l'ID "mioDiv" e poi abbiamo modificato il suo contenuto e il suo stile utilizzando le proprietà innerHTML e style.
+
+:::caution attenzione
+
+document.getElementById() restituisce solo il primo elemento con l'ID specificato. Se ci dovessero essere più elementi con lo stesso ID, il metodo restituirà solo il primo elemento trovato. Inoltre, se non dovesse venire trovato alcun elemento con l'ID specificato, il metodo restituirà il valore null.
+
+:::
+
+### addEventListener()
+
+**btn.addEventListener()** è un metodo che viene utilizzato per ascoltare gli eventi che avvengono su un elemento del DOM, ad esempio un pulsante. Il metodo prende due argomenti: il primo è il tipo di evento che si desidera ascoltare (ad esempio "click", "mouseover", "keydown", ecc.), e il secondo è la funzione che deve essere eseguita quando l'evento si verifica. La funzione viene eseguita solo quando l'evento si verifica.
+
+> [Scopri di più](https://www.w3schools.com/js/js_htmldom_eventlistener.asp)
+
+Ad esempio, se si vuole ascoltare il click su un pulsante con id "myButton", si potrebbe utilizzare il seguente codice:
+
+```jsx
+const myButton = document.getElementById("myButton");
+
+myButton.addEventListener("click", function() {
+  console.log("Il pulsante è stato cliccato!");
+});
+```
+
+In questo esempio, la funzione anonima viene eseguita solo quando l'evento di click si verifica sul pulsante "myButton". La funzione può eseguire qualsiasi azione desiderata, come ad esempio cambiare il testo in una pagina web, aprire una finestra di dialogo o eseguire una richiesta AJAX.
+
+### innerHTML
+
+**innerHTML**, invece, è una proprietà di un elemento del DOM che permette di modificare il contenuto HTML dell'elemento. Ad esempio, se si ha un elemento p con id "myParagraph" e si vuole cambiare il testo al suo interno, si può utilizzare il seguente codice:
+
+```jsx
+const myParagraph = document.getElementById("myParagraph");
+
+myParagraph.innerHTML = "Questo è il nuovo testo del paragrafo!";
+```
+
+In questo esempio, la proprietà innerHTML viene utilizzata per impostare il contenuto HTML dell'elemento p con id "myParagraph" con il testo "Questo è il nuovo testo del paragrafo!". Ciò sostituirà qualsiasi contenuto precedente all'interno dell'elemento.
+
+
+:::caution attenzione
+
+L'utilizzo di innerHTML può essere pericoloso se il contenuto è fornito dall'utente, poiché potrebbe causare vulnerabilità di sicurezza. In questi casi, è meglio utilizzare il metodo textContent per impostare il testo di un elemento del DOM, poiché questo metodo non interpreta l'input come codice HTML.
+
+:::
+
+## Variabili
+In JavaScript, le variabili vengono dichiarate utilizzando la parola chiave **"var"**, **"let"** o **"const"**. 
+
+**Una variabile è un'area di memoria in cui è possibile archiviare un valore.** Il valore di una variabile può essere modificato durante l'esecuzione del programma.
+
+La parola chiave "var" è stata usata in precedenza per dichiarare variabili in JavaScript, ma è stata sostituita da "let" e "const". La parola chiave "let" viene utilizzata per dichiarare una variabile il cui valore può essere modificato durante l'esecuzione del programma. La parola chiave "const" viene utilizzata per dichiarare una costante, il cui valore non può essere modificato.
+
+Ad esempio:
+
+```jsx
+let nome = "Mario";
+let eta = 30;
+const PI_GRECO = 3.14;
+```
+
+In questo esempio, abbiamo dichiarato tre variabili: "nome", "eta" e "PI_GRECO". "nome" è una variabile di tipo stringa, "eta" è una variabile di tipo numerico e "PI_GRECO" è una costante che contiene il valore 3.14.
+
+:::caution attenzione
+
+JavaScript è case-sensitive, quindi i nomi banana, Banana, BaNaNa sono tre variabili diverse.
+
+:::
+
+> [Scopri di più](https://www.w3schools.com/js/js_variables.asp)
+
+## Operatori
+
+JavaScript supporta anche molti operatori, come ad esempio l'operatore di assegnazione "=", l'operatore di addizione "+", l'operatore di sottrazione "-", l'operatore di moltiplicazione "*", l'operatore di divisione "/", l'operatore di resto "%" e l'operatore di concatenazione "+". Ecco alcuni esempi:
+
+```jsx
+let a = 10;
+let b = 5;
+let c = a + b; // 15
+let d = a - b; // 5
+let e = a * b; // 50
+let f = a / b; // 2
+let g = a % b; // 0
+let h = "Hello" + " " + "World"; // "Hello World"
+```
+
+JavaScript supporta anche espressioni, che sono combinazioni di valori, variabili e operatori che producono un risultato. Ad esempio:
+
+```jsx
+let x = 10;
+let y = 5;
+let z = (x + y) * 2; // 30
+```
+
+In questo esempio, abbiamo utilizzato una parentesi per forzare l'operazione di addizione prima della moltiplicazione.
+
+> [Scopri di più](https://www.w3schools.com/js/js_operators.asp)
+
+
+## Esercizi
+
+### Manipolazione del DOM
+
+In vscode crea una pagina HTML che contenga un pulsante e un paragrafo. Quando l'utente clicca sul pulsante, il testo del paragrafo deve cambiare in "Hai cliccato il pulsante!". Utilizza JavaScript per manipolare il DOM e per ascoltare l'evento di click sul pulsante.
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Manipolazione del DOM</title>
+</head>
+<body>
+	<button id="btn">Clicca qui!</button>
+	<p id="msg">Clicca sul pulsante per vedere il messaggio</p>
+
+	<script>
+        // Inserisci il tuo codice qui
+
+
+	</script>
+</body>
+</html>
+```
+
+
+### Variabili
+
+In RunJS dichiara tre variabili: due numeriche e una stringa e assegnale un valore iniziale. Stampale a video.
+
+
+### Operatori
+In RunJS dichiara due variabili. Utilizzando gli operatori aritmetici, scrivi un programma JavaScript che esegua le seguenti operazioni e mostri il risultato su console:
+
+- Somma delle due variabili
+- Sottrazione della prima variabile dalla seconda
+- Moltiplicazione delle due variabili
+- Divisione della seconda variabile per la prima
+
+
+**Congratulazioni! 🎉** 
+
+Ora hai appreso i concetti di base di JavaScript e sei pronto per imparare di più su come utilizzarli per creare script funzionanti.

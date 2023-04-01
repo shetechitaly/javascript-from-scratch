@@ -1,0 +1,90 @@
+---
+sidebar_position: 1
+---
+
+# Funzioni
+
+Argomenti: Function Declaration, Function Expression e Arrow Function
+
+## Intro
+
+In programmazione, **una funzione è un blocco di codice che può essere richiamato da altre parti del programma per eseguire una determinata operazione**. Le funzioni sono utilizzate per creare codice modulare, riutilizzabile e più facile da leggere e mantenere.
+
+> [Scopri di più](https://www.w3schools.com/js/js_functions.asp)
+
+## Function Declaration
+
+Per definire una funzione in JavaScript, si utilizza la parola chiave `function`, seguita dal nome della funzione e tra parentesi tonde i parametri della funzione (se presenti), infine le parentesi graffe che racchiudono il corpo della funzione.
+
+Esempio di definizione di una funzione:
+
+```jsx
+
+function saluta(nome) {
+  console.log(`Ciao ${nome}!`);
+}
+```
+
+Questa funzione, chiamata `saluta`, prende come parametro un nome e stampa a video il messaggio "Ciao" seguito dal nome.
+
+Per utilizzare una funzione, basta richiamarla utilizzando il nome della funzione e passando eventuali argomenti.
+
+```jsx
+saluta("Mario"); // Stampa "Ciao Mario!" a video
+```
+
+Le funzioni possono anche restituire un valore utilizzando l'istruzione `return`. Questo valore può essere poi assegnato a una variabile o utilizzato in qualsiasi altra operazione.
+
+Esempio di funzione che restituisce un valore:
+
+```jsx
+
+function quadrato(numero) {
+  return numero * numero;
+}
+
+let risultato = quadrato(5); // La variabile risultato conterrà il valore 25`
+```
+
+Infine, le funzioni possono essere utilizzate anche senza parametri. In tal caso, è necessario specificare le parentesi tonde vuote dopo il nome della funzione.
+
+Esempio di funzione senza parametri:
+
+```jsx
+function saluta() {
+  console.log("Ciao!");
+}
+
+saluta(); // Stampa "Ciao!" a video
+```
+
+## Function Expression
+
+È possibile definire funzioni anche senza specificare un nome, in tal caso si parla di **funzioni anonime**. Queste funzioni possono essere utilizzate come argomenti di altre funzioni o assegnate a variabili.
+
+Esempio di funzione anonima:
+
+```jsx
+  let saluta = function(nome) {
+  console.log(`Ciao ${nome}!`);
+};
+```
+
+## Arrow Function
+
+Le **arrow function** sono una sintassi più breve per definire le funzioni, introdotte in [ECMAScript 6](https://www.w3schools.com/js/js_es6.asp). Si utilizza l'operatore `=>` per separare i parametri dal corpo della funzione. Le arrow function non hanno un proprio oggetto `this`, ma ereditano quello dal contesto in cui sono state definite.
+
+Esempio di arrow function:
+
+```jsx
+  const quadrato = (numero) => numero * numero;
+  let risultato = quadrato(5); // La variabile risultato conterrà il valore 25
+```
+
+## Esercizio
+
+### if else 
+
+In RunJS, scrivere una funzione che prende in input un numero e restituisce una stringa che indica se il numero è pari o dispari.
+
+**Congratulazioni! 🎉** 

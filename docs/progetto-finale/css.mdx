@@ -1,0 +1,184 @@
+---
+sidebar_position: 3
+---
+
+# CSS
+
+## Intro
+
+CSS, acronimo di **Cascading Style Sheets**, è un linguaggio utilizzato per descrivere la presentazione di documenti HTML e XML, incluso il layout, i colori, i font e altri aspetti della presentazione visuale.
+
+In altre parole, CSS ci permette di definire lo stile e l'aspetto di una pagina web, separando la struttura del documento HTML dalla sua presentazione visuale.
+
+Attraverso l'utilizzo di selettori e dichiarazioni, è possibile selezionare gli elementi HTML e definirne l'aspetto visivo, come il colore del testo, il tipo di font, la posizione sullo schermo, ecc.
+
+## Attributi e valori
+
+Gli attributi CSS sono usati per definire lo stile degli elementi HTML. Questi attributi consistono di un selettore e di una o più dichiarazioni.
+
+Una dichiarazione è composta da una proprietà e un valore separati dal carattere due punti e terminati dal punto e virgola. Ad esempio:
+
+```css
+p {
+  color: blue;
+}
+```
+
+In questo esempio, "p" è il selettore e "color: blue;" è la dichiarazione composta dalla proprietà "color" e dal valore "blue".
+
+Esistono molti attributi CSS diversi che possono essere utilizzati per modificare l'aspetto degli elementi HTML, come ad esempio:
+
+-   `color`: imposta il colore del testo
+-   `font-size`: imposta la dimensione del carattere
+-   `background-color`: imposta il colore di sfondo
+-   `padding`: imposta lo spazio tra il contenuto e il bordo
+-   `margin`: imposta lo spazio esterno all'elemento
+-   `border`: imposta lo stile, lo spessore e il colore del bordo
+-   `text-align`: imposta l'allineamento del testo
+
+## Classi e ID
+
+Per applicare uno stile CSS a un elemento HTML, è necessario selezionarlo in modo univoco. Ci sono due modi principali per farlo: attraverso le classi e gli ID.
+
+Una classe CSS è un nome identificativo che può essere assegnato a uno o più elementi HTML. La classe viene definita all'interno del file CSS preceduta dal punto. Ad esempio:
+
+```css
+.text-blue {
+  color: blue;
+}
+```
+
+In questo esempio, la classe ".text-blue" viene assegnata a un elemento HTML e viene utilizzata per impostare il colore del testo su "blue".
+
+Gli ID CSS, invece, sono simili alle classi ma sono usati per selezionare un singolo elemento HTML invece che un gruppo di elementi. Gli ID sono definiti all'interno del file CSS preceduti dal cancelletto. Ad esempio:
+
+```css
+#header {
+  background-color: gray;
+}
+```
+In questo esempio, l'ID "#header" viene assegnato all'elemento HTML dell'intestazione e viene utilizzato per impostare il colore di sfondo su "gray".
+
+## Progetto
+
+Qui puoi copiare ed incollare lo stile in un file chiamato `style.css`. Prova a customizzare colori e forma della tua calcolatrice sperimentando le proprietà CSS (Cerca di non lasciarla come l'originale).
+
+
+```css
+html {
+  box-sizing: border-box;
+  height: 100%;
+}
+
+*,
+*::before,
+*::after  {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  align-items: center;
+  background: linear-gradient(to right, #ab0792, #f8616a);
+  display: flex;
+  font-family: "Montserrat", sans serif;
+  font-display: swap;
+  height: inherit;
+  justify-content: center;
+}
+
+.wrapper {
+  backdrop-filter: bluer(5.5px);
+  -webkit-backdrop-filter: blur(5.5px);
+  background: rgba(255, 255, 255, 0.75);
+  border: 1px solid rgba(255, 255, 255, 0.01);
+  border-radius: 16px;
+  box-shadow: 0 5px 30px solid rgba(255, 255, 255, 0.1);
+  -webkit-backdrop-filter: blur(4px);
+  background: rgba(255, 255, 255, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.34);
+  flex-basis: 400px;
+  height: 540px;
+  padding: 20px 35px;
+}
+
+.screen {
+  backdrop-filter: bluer(5.5px);
+  -webkit-backdrop-filter: blur(5.5px);
+  background: rgba(255, 255, 255, 0.75);
+  border: 1px solid rgba(255, 255, 255, 0.01);
+  border-radius: 16px;
+  box-shadow: 0 5px 30px solid rgba(255, 255, 255, 0.1);
+  -webkit-backdrop-filter: blur(4px);
+  background: rgba(255, 255, 255, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.34);
+  flex-basis: 400px;
+  width: 326px;
+  padding: 20px;
+  font-size: 35px;
+  text-align: right;
+}
+
+.calc-button-row {
+  display: flex;
+  justify-content: space-between;
+  margin: 5% 0;
+}
+
+.calc-button {
+  backdrop-filter: blur(5.5px);
+  -webkit-backdrop-filter: blur(5.5px);
+  background: rgba(255, 255, 255, 0.75);
+  border: 1px solid rgba(255, 255, 255, 0.01);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(35, 35, 35, 0.1);
+  color: #232323;
+  flex-basis: 20%;
+  font-family: inherit;
+  height: 65px;
+}
+
+.calc-button:last-child {
+  backdrop-filter: blur(5.5px);
+  -webkit-backdrop-filter: blur(5.5px);
+  border: 1px solid rgba(255, 255, 255, 0.01);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(35, 35, 35, 0.1);
+  color: #fff;
+  background: #d72880;
+  flex-basis: 20%;
+  font-family: inherit;
+  height: 65px;
+}
+
+.calc-button:last-child:hover {
+  cursor: pointer;
+  background-color: inherit;
+}
+
+.calc-button:hover {
+  cursor: pointer;
+  background-color: inherit;
+}
+
+.double {
+  flex-basis: 47%;
+}
+
+.triple {
+  flex-basis: 73%;
+}
+```
+
+**Ben fatto! 🎉**
+
+Ora inizia il bello! Con il prossimo step andrai ad aggiungere la funzionalità alla tua calcolatrice. 
+
+All'interno del bootcamp troverai già una soluzione. **Prova a scriverne una tua.** 
+
+:::tip 
+
+Ricordati che puoi usufruire dell'aiuto dei/delle mentors per risolvere qualsiasi dubbio.
+
+:::tip 
