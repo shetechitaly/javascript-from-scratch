@@ -62,11 +62,11 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       // Replace with your project's social card
-      image: 'img/docusaurus-social-card.jpg',
+      image: 'img/social-card.png',
       navbar: {
         title: 'JavaScript from scratch',
         logo: {
-          alt: 'My Site Logo',
+          alt: 'JavaScript from scratch',
           src: 'img/logo.png',
         },
         items: [
